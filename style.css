@@ -3,6 +3,8 @@
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -ms-osx-font-smoothing: grayscale;
 }
 
 html {
@@ -82,7 +84,7 @@ header {
   padding-block: 2.6rem;
   background-color: #fafdf6;
   color: #3e442b;
-  border-radius: 8px;
+  border-radius: 0.8rem;
   border: 2px solid transparent;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
@@ -100,6 +102,13 @@ header {
 .links-container li {
   display: flex;
   position: relative;
+}
+
+li a span {
+  margin-left: 0.4rem;
+  font-weight: bold;
+  color: #3e442b;
+  text-decoration: underline;
 }
 
 ion-icon {
@@ -133,5 +142,11 @@ footer a {
 @media screen and (min-width: 640px) {
   body {
     background: url(assets/bg-web.jpg) no-repeat top center/cover;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .form-icon {
+    display: none;
   }
 }

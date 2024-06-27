@@ -105,6 +105,10 @@ header {
   position: relative;
 }
 
+ul li:last-child {
+  padding-bottom: 3rem;
+}
+
 li a span {
   margin-left: 0.4rem;
   font-weight: bold;
